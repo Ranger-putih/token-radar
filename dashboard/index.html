@@ -3,12 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Token Radar: pre-token protocols ranked by implied value</title>
+<title>Token Radar — pre-token protocols ranked by implied value</title>
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<a class="skip" href="#board">Skip to the board</a>
-<main id="board" tabindex="-1" aria-busy="true"></main>
+<a class="skip" href="#app">Skip to the board</a>
+<header class="top">
+  <div class="brand"><span class="pulse" aria-hidden="true"></span><span class="brand-name">TOKEN RADAR</span></div>
+  <div class="top-meta"><span id="meta-date">Snapshot —</span><span id="meta-model">radar-2 model</span></div>
+</header>
+<main id="app" tabindex="-1" aria-busy="true">
+  <p class="loading">Loading the board…</p>
+</main>
+<footer class="foot">
+  <p>Implied value is this radar's own model, built only from the snapshot's figures. It is an estimate, never a price, and never a promise that a token will launch.</p>
+</footer>
+<dialog class="detail" id="detail" aria-labelledby="detail-title"></dialog>
 <script src="../data.js"></script>
 <script src="app.js"></script>
 </body>
